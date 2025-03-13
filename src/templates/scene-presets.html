@@ -1,0 +1,43 @@
+<!-- Shamelessly stolen from mass-edit's linker template -->
+<div style="display: flex; flex-direction: column;">
+    <!-- TODO -->
+    <div class="controls" style="height: 46px; display: none;">
+        <div style="flex: 1; display: flex; flex-direction: row;">
+            <a class="control" disabled data-tooltip="Attach Selected to Link"><i class="fa-duotone fa-solid fa-square-dashed-circle-plus"></i></a>
+            <a class="control" disabled data-tooltip="Attach Multi-Layer Select to Link"><i class="fa-solid fa-layer-plus"></i></a>
+            <a class="control" disabled data-tooltip="Connect Graph Node to Link"><i class="fa-duotone fa-solid fa-circle-nodes"></i></a>
+        </div>
+    </div>
+    <div style="display: flex; flex-flow: row; flex: 1;">
+        <div class="controls" data-tooltip-direction="LEFT">
+            <div style="flex: 1; display: flex; flex-direction: column;">
+                <a class="control selectedToLink" disabled data-tooltip="Attach Selected to Link"><i class="fa-duotone fa-solid fa-square-dashed-circle-plus"></i></a>
+                <a class="control pickerSelectToLink" disabled data-tooltip="Attach Multi-Layer Select to Link"><i class="fa-solid fa-layer-plus"></i></a>
+                <a class="control nodeToLink" disabled data-tooltip="Connect Graph Node to Link"><i class="fa-duotone fa-solid fa-circle-nodes"></i></a>
+                <a class="control cycleLinkType" disabled data-tooltip="Cycle through types for all connected nodes of the selected link."><i class="fa-duotone fa-solid fa-arrows-spin"></i></a>
+                <!-- <a class="control selectedLinkType" data-tooltip="Change link type of selected placeables."><i class="fa-duotone fa-solid fa-arrows-spin"></i></a> -->
+
+                <div style="flex: 1; display: flex; flex-direction: column-reverse; justify-content: flex-start;">
+                    <a class="control removeLinksSelected" data-tooltip="Remove all links from selected placeables.">
+                        <i class="fa-duotone fa-solid minus fa-square-dashed-circle-plus">
+                            <i style="position: absolute; font-size: 15px; right: -1px; bottom: -1px; font-weight: 600;" class="fa-solid fa-circle-minus"></i>
+                        </i>
+                    </a>
+                    <a class="control toggleLinkTokenDisable" data-tooltip="Toggle ON/OFF selected Token interactions with LinkToken Region Behavior.">
+                        <i class="fa-duotone fa-game-board">
+                            <i style="position: absolute; font-size: 15px; right: -6px; bottom: -6px; font-weight: 600; color: red;" class="fa-regular fa-ban"></i>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="graph" style="border: solid 1px white; flex: 1;">
+
+        </div>
+        <i class="fa-solid fa-circle-question"
+            style="font-size: 19px; position: absolute; right: 7px; top: 45px; color: gray;"
+            title="[Double-Click] an empty spot to create a new link.&#013;[Right-Click] nodes or edges to remove them.&#013;[Click] edges to change their type.&#013;[Double-Click] Link nodes to edit their label."
+        ></i>
+    </div>
+</div>
